@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dq44kswlubk3f"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://proto_controller/proto_controller.tscn" id="1_2dftf"]
+[ext_resource type="PackedScene" uid="uid://drvfxoxckfir2" path="res://Floor.tscn" id="2_bcbcq"]
+[ext_resource type="PackedScene" uid="uid://c560q0ccdoijm" path="res://trigger.tscn" id="3_bcbcq"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_js7pq"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_eu7l1"]
+sky_material = SubResource("ProceduralSkyMaterial_js7pq")
+
+[sub_resource type="Environment" id="Environment_p1v5b"]
+background_mode = 2
+sky = SubResource("Sky_eu7l1")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="World" type="Node3D" unique_id=136588473]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2043176545]
+environment = SubResource("Environment_p1v5b")
+
+[node name="ProtoController" parent="." unique_id=1170419526 instance=ExtResource("1_2dftf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2834069, 1.504712, 3.343926)
+
+[node name="Node3D" parent="." unique_id=2070964739 instance=ExtResource("2_bcbcq")]
+transform = Transform3D(94.4445, 0, 0, 0, 0.9999995, 0, 0, 0, 85.64195, 1.0324764, -0.03402424, 2.5443676)
+
+[node name="Trigger" parent="." unique_id=2090315125 instance=ExtResource("3_bcbcq")]
+transform = Transform3D(0.99955624, 0.029788364, 0, -0.029788364, 0.99955624, 0, 0, 0, 1, 2.7138708, 0.67427146, 0)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c560q0ccdoijm"]
+
+[ext_resource type="Script" uid="uid://uhivi3417kml" path="res://trigger.gd" id="1_r7rtx"]
+[ext_resource type="Texture2D" uid="uid://vqerh2t0ef6g" path="res://icon.svg" id="2_setfl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w1vxf"]
+
+[node name="Trigger" type="Area3D" unique_id=2090315125]
+script = ExtResource("1_r7rtx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=372096459]
+shape = SubResource("BoxShape3D_w1vxf")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1700658517]
+texture = ExtResource("2_setfl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
