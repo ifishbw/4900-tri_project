@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://deisu7xr0oub6"]
+
+[ext_resource type="PackedScene" uid="uid://g0rsp86u636p" path="res://GLB format/brick-wall.glb" id="1_2a6hn"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5hf47"]
+points = PackedVector3Array(1.25, 1.8125, -0.87507343, 1.25, 1.7498716, -0.5500685, 1.25, 1.7498716, -1.2000049, -1.25, 1.8125, -0.87507343, 1.25, 1.6998397, -0.5, -1.25, 1.7498716, -0.5500685, 1.25, 1.6998397, -1.25, -1.25, 1.7498716, -1.2000049, 1.25, 0, -0.5, -1.25, 1.6998397, -0.5, 1.25, 0, -1.25, -1.25, 1.6998397, -1.25, -1.25, 0, -0.5, -1.25, 0, -1.25)
+
+[node name="brick-wall2" unique_id=587108046 instance=ExtResource("1_2a6hn")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1169853254]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1942764303]
+shape = SubResource("ConvexPolygonShape3D_5hf47")

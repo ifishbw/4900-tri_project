@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://oaselieondyu"]
+
+[ext_resource type="PackedScene" uid="uid://dmgbarww6tnrj" path="res://GLB format/crypt-large.glb" id="1_wxd2d"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8s0j4"]
+
+[node name="crypt-large2" unique_id=1896084113 instance=ExtResource("1_wxd2d")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=34529580]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=1489700551]
+shape = SubResource("ConcavePolygonShape3D_8s0j4")

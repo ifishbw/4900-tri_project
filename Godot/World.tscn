@@ -3,6 +3,40 @@
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://proto_controller/proto_controller.tscn" id="1_2dftf"]
 [ext_resource type="PackedScene" uid="uid://drvfxoxckfir2" path="res://Floor.tscn" id="2_bcbcq"]
 [ext_resource type="PackedScene" uid="uid://c560q0ccdoijm" path="res://trigger.tscn" id="3_bcbcq"]
+[ext_resource type="PackedScene" uid="uid://xpv7rfpysh4p" path="res://GLB format/crypt-large-roof.glb" id="4_0vv3x"]
+[ext_resource type="PackedScene" uid="uid://xw7jj1jcdhj6" path="res://GLB format/crypt-b.glb" id="4_eu7l1"]
+[ext_resource type="PackedScene" uid="uid://dg87p4dy0u0q8" path="res://GLB format/debris.glb" id="5_fsfaj"]
+[ext_resource type="PackedScene" uid="uid://dmgbarww6tnrj" path="res://GLB format/crypt-large.glb" id="5_p1v5b"]
+[ext_resource type="PackedScene" uid="uid://b1uaa212sm004" path="res://GLB format/gravestone-roof.glb" id="6_yktx5"]
+[ext_resource type="PackedScene" uid="uid://b08c2itj5t1pa" path="res://GLB format/gravestone-decorative.glb" id="7_88f54"]
+[ext_resource type="PackedScene" uid="uid://bggxrm8s371vh" path="res://GLB format/gravestone-round.glb" id="8_s3rcb"]
+[ext_resource type="PackedScene" uid="uid://bjrwkiswyiusn" path="res://GLB format/gravestone-wide.glb" id="9_wf24g"]
+[ext_resource type="PackedScene" uid="uid://d0avnuaflgnw8" path="res://GLB format/gravestone-debris.glb" id="10_8ios8"]
+[ext_resource type="PackedScene" uid="uid://ct17ets38jric" path="res://GLB format/grave.glb" id="11_s1hef"]
+[ext_resource type="PackedScene" uid="uid://cdmdq22dcpxwf" path="res://GLB format/grave-border.glb" id="12_msfih"]
+[ext_resource type="PackedScene" uid="uid://cs3t3yl1r53gh" path="res://GLB format/gravestone-cross.glb" id="13_gyibe"]
+[ext_resource type="PackedScene" uid="uid://c60rahvcqw2y0" path="res://GLB format/pillar-obelisk.glb" id="14_lksbi"]
+[ext_resource type="PackedScene" uid="uid://bpnrlx54n6wuf" path="res://GLB format/detail-bowl.glb" id="15_f43k2"]
+[ext_resource type="PackedScene" uid="uid://culknxp4e22uu" path="res://GLB format/detail-chalice.glb" id="16_8jjlf"]
+[ext_resource type="PackedScene" uid="uid://x3npxdsfveoa" path="res://GLB format/debris-wood.glb" id="17_ylme8"]
+[ext_resource type="PackedScene" uid="uid://dumv5ilbhquao" path="res://GLB format/iron-fence-border.glb" id="18_ly4ka"]
+[ext_resource type="PackedScene" uid="uid://civsmkmtvbdkn" path="res://GLB format/lightpost-all.glb" id="19_o7opi"]
+[ext_resource type="PackedScene" uid="uid://hjuaowthkifd" path="res://GLB format/lightpost-single.glb" id="20_p6sh6"]
+[ext_resource type="PackedScene" uid="uid://bdlskcje5bk4o" path="res://GLB format/road.glb" id="21_olhe2"]
+[ext_resource type="PackedScene" uid="uid://d23eop7v0davs" path="res://GLB format/rocks-tall.glb" id="22_s3kwu"]
+[ext_resource type="PackedScene" uid="uid://pxkhd8trn0yw" path="res://GLB format/rocks.glb" id="23_ybp5j"]
+[ext_resource type="PackedScene" uid="uid://7qnjmx1qix66" path="res://GLB format/trunk-long.glb" id="24_m21jb"]
+[ext_resource type="PackedScene" uid="uid://dn5pidq3af2pp" path="res://GLB format/pine-crooked.glb" id="25_wmdyy"]
+[ext_resource type="PackedScene" uid="uid://bdahj3hu1cy0t" path="res://GLB format/pine.glb" id="26_tlk5t"]
+[ext_resource type="PackedScene" uid="uid://bm6r33myfw5gt" path="res://GLB format/pumpkin-carved.glb" id="27_k3wwj"]
+[ext_resource type="PackedScene" uid="uid://cs1flf3hv7oo" path="res://GLB format/shovel-dirt.glb" id="28_2tffn"]
+[ext_resource type="PackedScene" uid="uid://dtwh8sxpj6x32" path="res://GLB format/stone-wall-column.glb" id="29_4s2lh"]
+[ext_resource type="PackedScene" uid="uid://bjhdvgrxbqr3g" path="res://GLB format/stone-wall-curve.glb" id="30_i3ffs"]
+[ext_resource type="PackedScene" uid="uid://be3ntior4puoh" path="res://GLB format/stone-wall-damaged.glb" id="31_7470a"]
+[ext_resource type="PackedScene" uid="uid://ywdchwfynep6" path="res://GLB format/iron-fence-border-curve.glb" id="32_nrxlq"]
+[ext_resource type="PackedScene" uid="uid://c5djrgdu8vn04" path="res://GLB format/pillar-square.glb" id="33_bdxe7"]
+[ext_resource type="PackedScene" uid="uid://deisu7xr0oub6" path="res://brick_wall_2.tscn" id="36_fsfaj"]
+[ext_resource type="PackedScene" uid="uid://brks2tmptr0ge" path="res://Pickup.tscn" id="37_yktx5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_js7pq"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -16,6 +50,9 @@ background_mode = 2
 sky = SubResource("Sky_eu7l1")
 tonemap_mode = 2
 glow_enabled = true
+fog_enabled = true
+fog_light_color = Color(0.34, 0.34, 0.34, 1)
+fog_density = 0.0246
 
 [node name="World" type="Node3D" unique_id=136588473]
 
@@ -25,8 +62,409 @@ environment = SubResource("Environment_p1v5b")
 [node name="ProtoController" parent="." unique_id=1170419526 instance=ExtResource("1_2dftf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2834069, 1.504712, 3.343926)
 
-[node name="Node3D" parent="." unique_id=2070964739 instance=ExtResource("2_bcbcq")]
+[node name="Enviromentalassets" type="Node3D" parent="." unique_id=1511982781]
 transform = Transform3D(94.4445, 0, 0, 0, 0.9999995, 0, 0, 0, 85.64195, 1.0324764, -0.03402424, 2.5443676)
+
+[node name="Crypt1" type="Node3D" parent="Enviromentalassets" unique_id=1914664355]
+transform = Transform3D(0.010588229, 0, 0, 0, 1.0000005, 0, 0, 0, 0.01167652, -0.010932096, 0.034024253, -0.02970936)
+
+[node name="crypt-b2" parent="Enviromentalassets/Crypt1" unique_id=2105449417 instance=ExtResource("4_eu7l1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -8)
+
+[node name="crypt-large2" parent="Enviromentalassets/Crypt1" unique_id=1896084113 instance=ExtResource("5_p1v5b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -8)
+
+[node name="crypt-large-roof2" parent="Enviromentalassets/Crypt1" unique_id=224599947 instance=ExtResource("4_0vv3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.3514931, -8)
+
+[node name="debris2" parent="Enviromentalassets/Crypt1" unique_id=1426159971 instance=ExtResource("5_fsfaj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4)
+
+[node name="8Graves" type="Node3D" parent="Enviromentalassets" unique_id=391076884]
+transform = Transform3D(0.010588229, 0, 0, 0, 1.0000005, 0, 0, 0, 0.01167652, -0.033493295, 0.034024253, -0.14887549)
+
+[node name="gravestone-roof2" parent="Enviromentalassets/8Graves" unique_id=698399864 instance=ExtResource("6_yktx5")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 5.7442317, 0, 2.7878733)
+
+[node name="gravestone-decorative2" parent="Enviromentalassets/8Graves" unique_id=327096706 instance=ExtResource("7_88f54")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 8.342308, 0, 4.2878733)
+
+[node name="gravestone-round2" parent="Enviromentalassets/8Graves" unique_id=708983867 instance=ExtResource("8_s3rcb")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 8.244232, 0, -1.5422535)
+
+[node name="gravestone-wide2" parent="Enviromentalassets/8Graves" unique_id=2004601679 instance=ExtResource("9_wf24g")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 10.842308, 0, -0.042253494)
+
+[node name="gravestone-decorative3" parent="Enviromentalassets/8Graves" unique_id=1285262135 instance=ExtResource("7_88f54")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 13.440384, 0, 1.4577465)
+
+[node name="gravestone-debris2" parent="Enviromentalassets/8Graves" unique_id=894216290 instance=ExtResource("10_8ios8")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 10.940384, 0, 5.7878733)
+
+[node name="grave2" parent="Enviromentalassets/8Graves" unique_id=169015630 instance=ExtResource("11_s1hef")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 7.244232, 0, 0.1897974)
+
+[node name="grave-border2" parent="Enviromentalassets/8Graves" unique_id=1151868994 instance=ExtResource("12_msfih")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 7.342308, 0, 6.019924)
+
+[node name="gravestone-cross2" parent="Enviromentalassets/8Graves" unique_id=721926261 instance=ExtResource("13_gyibe")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 13.53846, 0, 7.2878733)
+
+[node name="pillar-obelisk2" parent="Enviromentalassets/8Graves" unique_id=965509602 instance=ExtResource("14_lksbi")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 16.03846, 0, 2.9577465)
+
+[node name="detail-bowl2" parent="Enviromentalassets/8Graves" unique_id=528074669 instance=ExtResource("15_f43k2")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 13.03846, 0, 8.153898)
+
+[node name="detail-chalice2" parent="Enviromentalassets/8Graves" unique_id=1762549621 instance=ExtResource("16_8jjlf")]
+transform = Transform3D(0.8660254, 0, -0.5, 0, 1, 0, 0.5, 0, 0.8660254, 5.2442317, 0, 3.6538992)
+
+[node name="debris-wood2" parent="Enviromentalassets" unique_id=1373063934 instance=ExtResource("17_ylme8")]
+transform = Transform3D(0.010588229, 0, 0, 0, 1.0000005, 0, 0, 0, 0.01167652, -0.05328501, 0.034024253, -0.07641544)
+
+[node name="Fencing" type="Node3D" parent="Enviromentalassets" unique_id=901067056]
+transform = Transform3D(0.010588229, 0, 0, 0, 1.0000005, 0, 0, 0, 0.01167652, -0.010932096, 0.034024253, -0.02970936)
+
+[node name="iron-fence-border2" parent="Enviromentalassets/Fencing" unique_id=301764106 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.145872, 0, -15.79362)
+
+[node name="iron-fence-border3" parent="Enviromentalassets/Fencing" unique_id=931220846 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.611937, 0, -15.79362)
+
+[node name="iron-fence-border4" parent="Enviromentalassets/Fencing" unique_id=687872302 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2700367, 0, -15.79362)
+
+[node name="iron-fence-border5" parent="Enviromentalassets/Fencing" unique_id=1568500234 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7361012, 0, -15.79362)
+
+[node name="iron-fence-border6" parent="Enviromentalassets/Fencing" unique_id=1923732298 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6603355, 0, -15.79362)
+
+[node name="iron-fence-border7" parent="Enviromentalassets/Fencing" unique_id=512065463 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1942711, 0, -15.79362)
+
+[node name="iron-fence-border8" parent="Enviromentalassets/Fencing" unique_id=1760609460 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.524433, 0, -15.79362)
+
+[node name="iron-fence-border9" parent="Enviromentalassets/Fencing" unique_id=1496463474 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.058368, 0, -15.79362)
+
+[node name="iron-fence-border10" parent="Enviromentalassets/Fencing" unique_id=988575979 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965306, 0, -10.896312)
+
+[node name="iron-fence-border11" parent="Enviromentalassets/Fencing" unique_id=1377229138 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965306, 0, -13.362376)
+
+[node name="iron-fence-border12" parent="Enviromentalassets/Fencing" unique_id=2024288029 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965306, 0, -6.0204763)
+
+[node name="iron-fence-border13" parent="Enviromentalassets/Fencing" unique_id=986315307 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965306, 0, -8.486541)
+
+[node name="iron-fence-border18" parent="Enviromentalassets/Fencing" unique_id=2089870437 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6603355, 0, -15.79362)
+
+[node name="iron-fence-border19" parent="Enviromentalassets/Fencing" unique_id=1959084898 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.524433, 0, -15.79362)
+
+[node name="iron-fence-border20" parent="Enviromentalassets/Fencing" unique_id=742676240 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.058368, 0, -15.79362)
+
+[node name="iron-fence-border32" parent="Enviromentalassets/Fencing" unique_id=1216944546 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.2226391, 0, 10.007457)
+
+[node name="iron-fence-border33" parent="Enviromentalassets/Fencing" unique_id=496053132 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -3.6887035, 0, 10.007456)
+
+[node name="iron-fence-border34" parent="Enviromentalassets/Fencing" unique_id=19524878 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.6531973, 0, 10.007457)
+
+[node name="iron-fence-border35" parent="Enviromentalassets/Fencing" unique_id=390974734 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.1871328, 0, 10.007457)
+
+[node name="iron-fence-border36" parent="Enviromentalassets/Fencing" unique_id=1995732545 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.58357, 0, 10.007458)
+
+[node name="iron-fence-border37" parent="Enviromentalassets/Fencing" unique_id=562233598 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 6.117505, 0, 10.007457)
+
+[node name="iron-fence-border38" parent="Enviromentalassets/Fencing" unique_id=1682024039 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.447667, 0, 10.007458)
+
+[node name="iron-fence-border39" parent="Enviromentalassets/Fencing" unique_id=2061373801 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10.981602, 0, 10.007458)
+
+[node name="iron-fence-border40" parent="Enviromentalassets/Fencing" unique_id=989025415 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.58357, 0, 10.007458)
+
+[node name="iron-fence-border41" parent="Enviromentalassets/Fencing" unique_id=1049111313 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.447667, 0, 10.007458)
+
+[node name="iron-fence-border42" parent="Enviromentalassets/Fencing" unique_id=1719889674 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10.981602, 0, 10.007458)
+
+[node name="iron-fence-border21" parent="Enviromentalassets/Fencing" unique_id=403957424 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965306, 0, -10.896312)
+
+[node name="iron-fence-border22" parent="Enviromentalassets/Fencing" unique_id=339690850 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965306, 0, -13.362376)
+
+[node name="iron-fence-border24" parent="Enviromentalassets/Fencing" unique_id=1853442664 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 16.003523, 0, -13.355961)
+
+[node name="iron-fence-border25" parent="Enviromentalassets/Fencing" unique_id=64052415 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 16.003523, 0, -10.889895)
+
+[node name="iron-fence-border26" parent="Enviromentalassets/Fencing" unique_id=2068492374 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.106215, 0, -15.796834)
+
+[node name="iron-fence-border27" parent="Enviromentalassets/Fencing" unique_id=1101791609 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.572279, 0, -15.796834)
+
+[node name="iron-fence-border28" parent="Enviromentalassets/Fencing" unique_id=1453509420 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 16.003523, 0, -13.355961)
+
+[node name="iron-fence-border29" parent="Enviromentalassets/Fencing" unique_id=1738072054 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 16.003523, 0, -10.889895)
+
+[node name="iron-fence-border30" parent="Enviromentalassets/Fencing" unique_id=1960311928 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.106215, 0, -15.796834)
+
+[node name="iron-fence-border31" parent="Enviromentalassets/Fencing" unique_id=456577778 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.572279, 0, -15.796834)
+
+[node name="iron-fence-border53" parent="Enviromentalassets/Fencing" unique_id=1267528601 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -10.919775, 3.8146973e-06, 7.6075783)
+
+[node name="iron-fence-border54" parent="Enviromentalassets/Fencing" unique_id=284072162 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -6.022467, 3.8146973e-06, 10.048451)
+
+[node name="iron-fence-border55" parent="Enviromentalassets/Fencing" unique_id=1018860808 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -8.488531, 3.8146973e-06, 10.048451)
+
+[node name="iron-fence-border56" parent="Enviromentalassets/Fencing" unique_id=379973871 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -10.919775, 3.8146973e-06, 7.6075783)
+
+[node name="iron-fence-border57" parent="Enviromentalassets/Fencing" unique_id=1180559332 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -6.022467, 3.8146973e-06, 10.048451)
+
+[node name="iron-fence-border58" parent="Enviromentalassets/Fencing" unique_id=807351019 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -8.488531, 3.8146973e-06, 10.048451)
+
+[node name="iron-fence-border23" parent="Enviromentalassets/Fencing" unique_id=1473702025 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965306, 0, -8.486541)
+
+[node name="iron-fence-border14" parent="Enviromentalassets/Fencing" unique_id=1689432558 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965304, 0, -1.0901041)
+
+[node name="iron-fence-border15" parent="Enviromentalassets/Fencing" unique_id=1473438138 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965304, 0, -3.5561686)
+
+[node name="iron-fence-border16" parent="Enviromentalassets/Fencing" unique_id=2017586949 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965304, 0, 5.6698265)
+
+[node name="iron-fence-border52" parent="Enviromentalassets/Fencing" unique_id=1847054511 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965304, 0, 3.7739935)
+
+[node name="iron-fence-border17" parent="Enviromentalassets/Fencing" unique_id=932927516 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10.965304, 0, 1.307929)
+
+[node name="iron-fence-border43" parent="Enviromentalassets/Fencing" unique_id=1012875699 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, -6.0204763)
+
+[node name="iron-fence-border44" parent="Enviromentalassets/Fencing" unique_id=1178718884 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, -8.486541)
+
+[node name="iron-fence-border45" parent="Enviromentalassets/Fencing" unique_id=943745967 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, -8.486541)
+
+[node name="iron-fence-border46" parent="Enviromentalassets/Fencing" unique_id=1003009772 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, -1.0901041)
+
+[node name="iron-fence-border47" parent="Enviromentalassets/Fencing" unique_id=834541243 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, -3.5561686)
+
+[node name="iron-fence-border48" parent="Enviromentalassets/Fencing" unique_id=1636668922 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, 1.307929)
+
+[node name="iron-fence-border49" parent="Enviromentalassets/Fencing" unique_id=1701421786 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, 3.7860513)
+
+[node name="iron-fence-border51" parent="Enviromentalassets/Fencing" unique_id=1656365924 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, 8.068178)
+
+[node name="iron-fence-border50" parent="Enviromentalassets/Fencing" unique_id=568437276 instance=ExtResource("18_ly4ka")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17.64702, 0.03766179, 6.1840844)
+
+[node name="lightpost-all2" parent="Enviromentalassets/Fencing" unique_id=1888322317 instance=ExtResource("19_o7opi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.782003, -0.09728432, -2.5959044)
+
+[node name="lightpost-single2" parent="Enviromentalassets/Fencing" unique_id=1564261341 instance=ExtResource("20_p6sh6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2345839, -0.09728432, -4.416685)
+
+[node name="road2" parent="Enviromentalassets/Fencing" unique_id=1566636580 instance=ExtResource("21_olhe2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.182887, -0.09728336, -3.9761887)
+
+[node name="rocks-tall2" parent="Enviromentalassets/Fencing" unique_id=448719031 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(1.6354522, 0, 3.7165518, 0, 6.554842, 0, -1.3946867, 0, 4.358141, 21.630566, -0.09728336, -21.343853)
+
+[node name="rocks2" parent="Enviromentalassets/Fencing" unique_id=123015136 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(6.4016542, 0, 0, 0, 14.547062, 0, 0, 0, 9.895355, 27.751705, -0.09728241, -8.758169)
+
+[node name="rocks3" parent="Enviromentalassets/Fencing" unique_id=43448127 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(3.4157317, 0, 0, 0, 3.4592004, 0, 0, 0, 3.493333, 20.868717, -0.097286224, -16.716837)
+
+[node name="rocks-tall3" parent="Enviromentalassets/Fencing" unique_id=448754139 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(0.3569745, 0, 7.709142, 0, 6.554845, 0, -3.4020946, 0, 0.8089018, -5.8630686, -0.09728336, -31.725237)
+
+[node name="rocks4" parent="Enviromentalassets/Fencing" unique_id=1662266488 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(7.8244014, 0, 5.9589314, 0, 14.547059, 0, -7.4388494, 0, 6.2677817, 8.900442, -0.09728241, -28.558176)
+
+[node name="rocks5" parent="Enviromentalassets/Fencing" unique_id=954610094 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(4.174868, 0, 2.103667, 0, 3.4592, 0, -3.9691474, 0, 2.2126994, -3.802273, -0.097286224, -26.862381)
+
+[node name="rocks-tall4" parent="Enviromentalassets/Fencing" unique_id=1058617952 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(4.3193374, 0, -6.733745, 0, 8, 0, 6.733745, 0, 4.3193374, -17.805965, -0.09728241, 22.86911)
+
+[node name="rocks-tall5" parent="Enviromentalassets/Fencing" unique_id=789256132 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -27.94562, -0.09728241, 8.2375)
+
+[node name="rocks-tall6" parent="Enviromentalassets/Fencing" unique_id=1943494856 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(4.216002, 0, -6.798921, 0, 8, 0, 6.798921, 0, 4.216002, -6.1643887, -0.33659744, 34.42258)
+
+[node name="rocks6" parent="Enviromentalassets/Fencing" unique_id=379188653 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(5.403956, 0, 0, 0, 4.295973, 0, 0, 0, 5.2453485, -3.856676, -0.09728241, 23.273026)
+
+[node name="rocks-tall7" parent="Enviromentalassets/Fencing" unique_id=695584140 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(14.483736, 0, -0.5141342, 0, 14.492862, 0, 0.5141342, 0, 14.483736, 33.559498, -1.1495125, 31.364773)
+
+[node name="rocks-tall8" parent="Enviromentalassets/Fencing" unique_id=1666024067 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(8.252776, 0, 11.913635, 0, 14.492859, 0, -11.913635, 0, 8.252776, 6.9957275, -1.1495123, 42.52069)
+
+[node name="rocks-tall9" parent="Enviromentalassets/Fencing" unique_id=824942659 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(-10.132066, 0, 4.7500887, 0, 11.190271, 0, -4.7500887, 0, -10.132066, 33.90548, -1.5830568, 16.869904)
+
+[node name="rocks10" parent="Enviromentalassets/Fencing" unique_id=1447392047 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(-3.3792994, 0, -4.0932283, 0, 4.2959733, 0, 4.2169986, 0, -3.280116, -74.47645, -0.097286224, -32.832077)
+
+[node name="rocks-tall10" parent="Enviromentalassets/Fencing" unique_id=1508390838 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(-9.458439, 0, -10.980933, 0, 14.492862, 0, 10.980933, 0, -9.458439, -104.18863, -1.1495163, -8.694297)
+
+[node name="rocks-tall11" parent="Enviromentalassets/Fencing" unique_id=1551409380 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(4.1360784, 0, -13.890136, 0, 14.492859, 0, 13.890136, 0, 4.1360784, -96.28286, -1.1495161, -36.399662)
+
+[node name="rocks-tall12" parent="Enviromentalassets/Fencing" unique_id=1273907716 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(10.042717, 0, 4.9361863, 0, 11.190272, 0, -4.9361863, 0, 10.042717, -93.09386, -1.5830606, 0.63988495)
+
+[node name="rocks11" parent="Enviromentalassets/Fencing" unique_id=1961429641 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(-5.2615647, 0, 1.196176, 0, 4.295974, 0, -1.2323453, 0, -5.107137, -33.577736, -0.097286224, -64.315735)
+
+[node name="rocks-tall13" parent="Enviromentalassets/Fencing" unique_id=1911346961 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(-13.984853, 0, 3.8035312, 0, 14.492862, 0, -3.8035312, 0, -13.984853, -68.16273, -1.1495163, -80.726845)
+
+[node name="rocks-tall14" parent="Enviromentalassets/Fencing" unique_id=110134800 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(-10.752165, 0, -9.717714, 0, 14.492859, 0, 9.717714, 0, -10.752165, -39.754845, -1.1495161, -85.531075)
+
+[node name="rocks-tall15" parent="Enviromentalassets/Fencing" unique_id=233331542 instance=ExtResource("22_s3kwu")]
+transform = Transform3D(8.781858, 0, -6.9354944, 0, 11.190272, 0, 6.9354944, 0, 8.781858, -71.80508, -1.5830606, -66.6928)
+
+[node name="rocks7" parent="Enviromentalassets/Fencing" unique_id=245881101 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(5.574705, 0, 7.811396, 0, 7.7826185, 0, -8.047596, 0, 5.411087, 31.359383, 0.3245504, -0.16387057)
+
+[node name="rocks8" parent="Enviromentalassets/Fencing" unique_id=2058967301 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(5.3349304, 0, 7.0044203, 0, 6.6108, 0, -8.520787, 0, 4.3855214, -28.62566, -0.09728241, -9.335873)
+
+[node name="rocks9" parent="Enviromentalassets/Fencing" unique_id=1665568726 instance=ExtResource("23_ybp5j")]
+transform = Transform3D(-12.15141, 0, -0.8877976, 0, 8.022103, 0, 1.0799948, 0, -9.988935, -20.407902, -0.09728241, -29.33797)
+
+[node name="trunk-long2" parent="Enviromentalassets/Fencing" unique_id=881181339 instance=ExtResource("24_m21jb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9594269, -0.09728241, 13.443109)
+
+[node name="pine-crooked2" parent="Enviromentalassets/Fencing" unique_id=1770608265 instance=ExtResource("25_wmdyy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.735634, 0.15271759, 14.275887)
+
+[node name="pine2" parent="Enviromentalassets/Fencing" unique_id=1556793677 instance=ExtResource("26_tlk5t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.540842, 0.15271568, 7.643631)
+
+[node name="pine3" parent="Enviromentalassets/Fencing" unique_id=983691067 instance=ExtResource("26_tlk5t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.105256, 0.15271664, 17.252205)
+
+[node name="pine4" parent="Enviromentalassets/Fencing" unique_id=2124853857 instance=ExtResource("26_tlk5t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.45986, 0.15271759, 6.554653)
+
+[node name="pine-crooked3" parent="Enviromentalassets/Fencing" unique_id=1578955671 instance=ExtResource("25_wmdyy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.856526, 0.1527195, 1.6320634)
+
+[node name="pumpkin-carved2" parent="Enviromentalassets/Fencing" unique_id=2018586710 instance=ExtResource("27_k3wwj")]
+transform = Transform3D(-0.6572307, 0, 0.7536895, 0, 1, 0, -0.7536895, 0, -0.6572307, -7.4102306, -0.0972805, 6.8121347)
+
+[node name="shovel-dirt2" parent="Enviromentalassets/Fencing" unique_id=511226773 instance=ExtResource("28_2tffn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.001185, -0.09728241, 5.1472616)
+
+[node name="stone-wall-column2" parent="Enviromentalassets/Fencing" unique_id=1064189602 instance=ExtResource("29_4s2lh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 9)
+
+[node name="stone-wall-curve2" parent="Enviromentalassets/Fencing" unique_id=2075849345 instance=ExtResource("30_i3ffs")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4, 0, 7)
+
+[node name="stone-wall-damaged2" parent="Enviromentalassets/Fencing" unique_id=1415351207 instance=ExtResource("31_7470a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 9)
+
+[node name="Node3D" type="Node3D" parent="Enviromentalassets" unique_id=811334203]
+
+[node name="iron-fence-border-curve2" parent="Enviromentalassets/Node3D" unique_id=1917568161 instance=ExtResource("32_nrxlq")]
+transform = Transform3D(0.010588229, 0, 0, 0, 1.0000005, 0, 0, 0, 0.01167652, -0.12734987, -0.003242977, -0.21443358)
+
+[node name="iron-fence-border-curve3" parent="Enviromentalassets/Node3D" unique_id=145913959 instance=ExtResource("32_nrxlq")]
+transform = Transform3D(0.010588229, 0, 0, 0, 1.0000005, 0, 0, 0, 0.01167652, -0.12734987, -0.003242977, -0.21443358)
+
+[node name="iron-fence-border-curve6" parent="Enviromentalassets/Node3D" unique_id=316456515 instance=ExtResource("32_nrxlq")]
+transform = Transform3D(-0.010588229, 0, 9.2565233e-10, 0, 1.0000005, 0, -1.0207937e-09, 0, -0.01167652, 0.157614, -0.003242977, 0.087452635)
+
+[node name="iron-fence-border-curve7" parent="Enviromentalassets/Node3D" unique_id=943432247 instance=ExtResource("32_nrxlq")]
+transform = Transform3D(-0.010588229, 0, 9.2565233e-10, 0, 1.0000005, 0, -1.0207937e-09, 0, -0.01167652, 0.157614, -0.003242977, 0.087452635)
+
+[node name="iron-fence-border-curve4" parent="Enviromentalassets/Node3D" unique_id=211060513 instance=ExtResource("32_nrxlq")]
+transform = Transform3D(-4.6282617e-10, 0, -0.010588229, 0, 1.0000005, 0, 0.01167652, 0, -5.1039684e-10, 0.15879771, -0.003242977, -0.21450832)
+
+[node name="iron-fence-border-curve5" parent="Enviromentalassets/Node3D" unique_id=1350265371 instance=ExtResource("32_nrxlq")]
+transform = Transform3D(-4.6282617e-10, 0, -0.010588229, 0, 1.0000005, 0, 0.01167652, 0, -5.1039684e-10, 0.15879771, -0.003242977, -0.21450832)
+
+[node name="iron-fence-border-curve8" parent="Enviromentalassets/Node3D" unique_id=2086926342 instance=ExtResource("32_nrxlq")]
+transform = Transform3D(1.3884784e-09, 0, 0.010588229, 0, 1.0000005, 0, -0.01167652, 0, 1.5311906e-09, -0.12683405, -0.0032391623, 0.08796851)
+
+[node name="iron-fence-border-curve9" parent="Enviromentalassets/Node3D" unique_id=1500474752 instance=ExtResource("32_nrxlq")]
+transform = Transform3D(1.3884784e-09, 0, 0.010588229, 0, 1.0000005, 0, -0.01167652, 0, 1.5311906e-09, -0.12683405, -0.0032391623, 0.08796851)
+
+[node name="pillar-square2" parent="Enviromentalassets/Node3D" unique_id=252292988 instance=ExtResource("33_bdxe7")]
+transform = Transform3D(0.014224265, 0, 0, 0, 1.3434042, 0, 0, 0, 0.01568628, -0.07941695, 0.03674079, 0.073964566)
+
+[node name="pillar-obelisk2" parent="Enviromentalassets/Node3D" unique_id=1990813289 instance=ExtResource("14_lksbi")]
+transform = Transform3D(0.010734691, 0, 0.016075922, 0, 1.8256619, 0, -0.017728256, 0, 0.011838037, 0.045939147, 0.03674079, 0.076979004)
+
+[node name="Node3D" parent="." unique_id=2070964739 instance=ExtResource("2_bcbcq")]
+transform = Transform3D(94.4445, 0, 0, 0, 0.9999995, 0, 0, 0, 85.64195, -0.6072607, 0.005959131, 3.6838257)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Node3D" unique_id=1525719092]
+transform = Transform3D(0.010588229, 0, 0, 0, 1.0000005, 0, 0, 0, 0.01167652, -0.07026246, 1.8326477, -0.061551668)
+light_color = Color(1, 0.7625, 0.25, 1)
 
 [node name="Trigger" parent="." unique_id=2090315125 instance=ExtResource("3_bcbcq")]
 transform = Transform3D(0.99955624, 0.029788364, 0, -0.029788364, 0.99955624, 0, 0, 0, 1, 2.7138708, 0.67427146, 0)
+
+[node name="brick-wall2" parent="." unique_id=587108046 instance=ExtResource("36_fsfaj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.281402, 0.0027165413, 0.81755257)
+
+[node name="Pickup" parent="." unique_id=1394143459 instance=ExtResource("37_yktx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3350315, 1.3718737, -1.3764734)
+metadata/_edit_group_ = true
+
+[node name="Pickup4" parent="." unique_id=365245343 instance=ExtResource("37_yktx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9645996, 1.3718737, -1.905721)
+metadata/_edit_group_ = true
+
+[node name="Pickup2" parent="." unique_id=1625241762 instance=ExtResource("37_yktx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5097412, 1.4371926, -0.3456416)
+
+[node name="Pickup3" parent="." unique_id=901655996 instance=ExtResource("37_yktx5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5752773, 1.4371926, -4.145215)
